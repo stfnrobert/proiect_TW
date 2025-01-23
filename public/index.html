@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programare Salon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Salonul Frumusetti</h1>
+    </header>
+
+    <main>
+        <section id="booking">
+            <h2>Book an Appointment</h2>
+            <form id="appointment-form" action="/submit" method="POST">
+                <label for="name">Nume Complet:</label>
+                <input type="text" id="name" name="name" placeholder="ex: Andrei Matei" required>
+
+                <label for="email">Mail:</label>
+                <input type="email" id="email" name="email" placeholder="ex: nume@domain.com" required>
+
+                <label for="phone">Numar Telefon:</label>
+                <input type="tel" id="phone" name="phone" placeholder="ex: +40723421232" required>
+
+                <label for="date">Data Programata:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Ora Programare:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="service">Serviciu:</label>
+                <select id="service" name="service" required>
+                    <option value="haircut">Tuns</option>
+                    <option value="coloring">Vopsit</option>
+                    <option value="styling">Stilizare</option>
+                    <option value="manicure">Manichiura</option>
+                    <option value="pedicure">Pedichiura</option>
+                </select>
+
+                <button type="submit">Programeaza-te</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
